@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{TITLE}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{WEBURL}vendor/goragod/kotchasan/js/gajax.js"></script>
+    <script src="{WEBURL}vendor/goragod/kotchasan/js/ddmenu.js"></script>
+    <link href="{WEBURL}vendor/goragod/kotchasan/skin/gcss.css" rel="stylesheet">
+    <link href="{WEBURL}skin/default/style.css" rel="stylesheet">
+  </head>
+  <body class="responsive">
+    <div class="gcss-wrapper">
+      <header class="header">
+        <h1>{WEBTITLE}</h1>
+        <nav id=topmenu class="topmenu responsive"><ul>{TOPMENU}</ul></nav>
+      </header>
+      <main class="content">{CONTENT}</main>
+      <footer class="footer">
+        <p>Copyright @ kotchasan ({QURIES} quries.)</p>
+      </footer>
+    </div>
+    <script>
+      new GDDMenu('topmenu');
+    </script>
+  </body>
+</html>

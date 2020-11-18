@@ -1,0 +1,41 @@
+body {
+  background-color: #F5F5F5;
+}
+.gcss-wrapper {
+  background-color: #FFF;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.content {
+  padding: 1%;
+}
+/* header */
+header {
+  background-color: #03A9F4;
+}
+header h1 {
+  padding: 20px 10px;
+  color: #FFF;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.2);
+}
+/* footer */
+.footer {
+  border-top: 3px solid #DDD;
+  background-color: #EEE;
+  text-align: center;
+  padding: 20px 10px;
+  color: #666;
+}
+/* menu */
+.topmenu {
+  background-color: rgba(0,0,0,0.04);
+  padding: 5px;
+}
+.topmenu > ul > li > a {
+  color: #FFF;
+}
+.topmenu > ul > li.select > a {
+  background-color: rgba(0,0,0,0.1);
+}
+.topmenu > ul > li:hover > a {
+  background-color: rgba(0,0,0,0.2);
+}

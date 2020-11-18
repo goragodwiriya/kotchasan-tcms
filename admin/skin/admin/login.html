@@ -1,0 +1,18 @@
+<article id=login_div>
+  <h1>
+    <a href="../index.php">{WEBTITLE}</a>
+  </h1>
+  <form id=login_frm method=post autocomplete=off>
+    <h2 class="icon-customer">Login</h2>
+    <p class="{CLASS} center">{MESSAGE}</p>
+    <fieldset>
+      <p><label class="g-input icon-user"><input type=text name=login_username id=login_username value="{EMAIL}" maxlength=20 placeholder="Username"></label></p>
+      <p><label class="g-input icon-password"><input type=password name=login_password id=login_password value="{PASSWORD}" maxlength=10 placeholder="รหัสผ่าน"></label></p>
+    </fieldset>
+    <fieldset class=right><input type=submit class="button large login wide" value="เข้าสู่ระบบ"></fieldset>
+    <input type="hidden" name="token" value="{TOKEN}">
+  </form>
+  <script>
+    new GForm('login_frm');
+  </script>
+</article>

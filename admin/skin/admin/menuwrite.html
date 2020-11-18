@@ -1,0 +1,38 @@
+<form method="post" id="setup_frm" class="setup_frm" autocomplete="off">
+  <fieldset>
+    <legend><span>รายละเอียดเมนู</span></legend>
+    <div class="item">
+      <label for="write_id">ID</label>
+      <span class="g-input icon-edit"><input id="write_id" type="number" name="write_id" value="{ID}"></span>
+      <div class="comment">กรอกตัวเลขมากกว่า 0 ใช้กำหนดลำดับของเมนู</div>
+    </div>
+    <div class="item">
+      <label for="write_module">โมดูล</label>
+      <span class="g-input icon-documents"><input id="write_module" maxlength="20" type="text" name="write_module" value="{MODULE}"></span>
+      <div class="comment">ชื่อโมดูล ภาษาอังกฤษตัวพิมพ์เล็กเท่านั้น</div>
+    </div>
+    <div class="item">
+      <label for="write_text">ข้อความบนเมนู</label>
+      <span class="g-input icon-menus"><input id="write_text" maxlength="50" type="text" name="write_text" value="{TEXT}"></span>
+      <div class="comment">ข้อความแสดงบนเมนู</div>
+    </div>
+    <div class="item">
+      <label for="write_url">ลิงค์</label>
+      <span class="g-input icon-world"><input id="write_url" maxlength="255" type="text" name="write_url" value="{URL}"></span>
+      <div class="comment">ลิงค์ที่ต้องการเรียก เมื่อคลิกเมนู</div>
+    </div>
+    <div class="item">
+      <label for="write_target">การเปิดหน้า</label>
+      <span class="g-input icon-config"><select name="write_target" id="write_target">{TARGET}</select></span>
+      <div class="comment">เลือกวิธีการเปิดหน้า เมื่อมีการคลิกเมนู</div>
+    </div>
+  </fieldset>
+  <fieldset class="submit">
+    <input type="submit" value="บันทึก" class="button large save">
+    <input type="hidden" name="last_id" value="{LASTID}">
+    <input type="hidden" name="token" value="{TOKEN}">
+  </fieldset>
+</form>
+<script>
+  new GForm("setup_frm", "index.php/index/model/menus/save").onsubmit(doFormSubmit);
+</script>

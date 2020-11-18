@@ -1,0 +1,288 @@
+body {
+  background-color: #E9E9E9;
+  color: #666;
+  font-family: 'Athiti', Tahoma, Loma;
+  font-size: 14px;
+}
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+body.loginpage {
+  background-color: #3498DB;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #13A89E;
+}
+#login_div {
+  height: 100%;
+  padding: 30px 0 10px;
+}
+#login_div h1 {
+  text-align: center;
+  margin: 0 auto 30px;
+}
+#login_div h1 a {
+  color: rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.2);
+  font-weight: bold;
+}
+#login_frm {
+  max-width: 95%;
+  display: table;
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #FFF;
+  font-size: 1.2em;
+}
+#login_frm h2 {
+  margin: 15px 0 8px;
+  padding: 0 15px;
+  position: relative;
+}
+#login_frm fieldset {
+  margin: 20px;
+  padding: 0;
+}
+.scroller:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+}
+#scroll-to {
+  background-color: #1276B9;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+#scroll-to .td,
+#scroll-to a,
+.topmenu > ul > li > a {
+  color: #DDD;
+  text-shadow: -1px -1px rgba(0,0,0,0.4);
+}
+.menu_wrapper {
+  background-color: #2387CA;
+}
+.topmenu > ul > li:hover > a {
+  color: #FFF;
+}
+.topmenu > ul > li.select > a {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.topmenu > ul ul {
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#scroll-to .td {
+  padding: 5px 20px;
+  white-space: nowrap;
+}
+#scroll-to .logo a {
+  font-size: 2em;
+  color: inherit;
+}
+#scroll-to img {
+  width: auto;
+  height: 32px;
+}
+#scroll-to .usericon {
+  border: 3px solid rgba(0,0,0,0.1);
+  min-width: auto;
+}
+fieldset.search input[type="submit"],
+.editinplace:hover:after,
+.facebook:after,
+.ban:after {
+  font-family: 'icomoon';
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  min-width: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.breadcrumbs {
+  padding: 5px 10px;
+  list-style-type: none;
+  background-color: #ECECEC;
+  overflow: hidden;
+  text-shadow: 1px 1px 0 #FFF;
+}
+.breadcrumbs > li {
+  float: left;
+}
+.breadcrumbs li:before {
+  content: '/';
+}
+.section {
+  margin: 0 1% 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DBDBDB;
+  padding-bottom: 10px;
+  clear: both;
+}
+section > header {
+  padding: 10px;
+  position: relative;
+  background-color: #ECECEC;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 -2px 1px rgba(0,0,0,0.1) inset;
+  text-shadow: 1px 1px 1px #FFF;
+}
+#to-bottom {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1) inset;
+  background-color: #3498DB;
+  overflow: hidden;
+  margin-top: 10px;
+}
+#to-bottom p {
+  line-height: 4em;
+}
+#to-bottom a {
+  color: inherit;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -68px;
+}
+.wrapper::after {
+  content: '';
+  display: block;
+  height: 68px;
+}
+/* table */
+table {
+  border-collapse: separate;
+  font-size: inherit;
+}
+caption {
+  padding: 5px 10px;
+}
+table thead th {
+  white-space: nowrap;
+  text-shadow: 1px 1px 0 #FFF;
+  font-weight: bold;
+  background-color: #DDD;
+}
+table td:first-child,
+table th:first-child {
+  padding-left: 10px;
+}
+table td:last-child,
+table th:last-child {
+  padding-right: 10px;
+}
+td.menu,
+th.menu {
+  width: 16px;
+  text-align: center;
+}
+td.thumb > img {
+  max-width: 48px;
+  max-height: 48px;
+}
+.check-column {
+  padding: 0;
+  width: 2.5em;
+  text-align: center !important;
+}
+tbody th,
+tbody td,
+thead th {
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-top-color: #FFF;
+  border-top-color: rgba(255,255,255,0.1);
+}
+table.responsive-v > thead > tr:first-child > th {
+  border-top-color: inherit;
+}
+table.summary th {
+  text-align: left;
+}
+table.border {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table.database,
+table.config_table {
+  border-style: solid;
+  border-width: 1px;
+}
+table.database th {
+  background-color: #F9F9F9;
+  border-right-style: solid;
+}
+table.database > tbody > tr:last-child > td,
+table.config_table > tbody > tr:last-child > * {
+  border-bottom-style: none;
+}
+table.config_table > tbody > tr > td, .no {
+  text-align: center;
+}
+td a[class*="icon"] {
+  display: block;
+}
+/* form */
+.setup_frm {
+  overflow: hidden;
+  margin: 10px auto;
+  display: table;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background-color: #FFF;
+  width: 960px;
+  max-width: 100%;
+}
+.setup_frm ul {
+  list-style-type: none;
+  line-height: 2em;
+  padding: 10px ;
+}
+.subtitle, caption {
+  padding: 5px 10px;
+  color: #999;
+}
+caption {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #DDD;
+}
+form .item {
+  margin: 0 10px 10px;
+}
+form .subitem {
+  margin: -10px 10px 10px;
+}
+form .submit {
+  margin: 0 10px 10px;
+}
+div.submit {
+  margin: 10px;
+}
+fieldset {
+  padding-bottom: 1.5em;
+}
+fieldset fieldset,
+fieldset.item {
+  padding-bottom: 0;
+}
+.setup_frm > form > fieldset > legend > span,
+.setup_frm > fieldset > legend > span,
+.setup_frm h2 {
+  display: block;
+  padding: 10px 10px;
+}
+.setup_frm > fieldset > legend > span {
+  font-size: 1.8em;
+}
